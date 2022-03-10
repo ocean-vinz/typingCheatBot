@@ -9,7 +9,6 @@ import pyautogui
 driver = webdriver.Firefox(service=Service(GeckoDriverManager().install()))
 
 #Global_Variables
-STEPS=0.0015
 TOTALSECONDS=60
 SPANNUM=1
 
@@ -24,7 +23,6 @@ while time.time() < t_end:
     listWord=list(Word1.text)
     for letter in listWord:
         pyautogui.typewrite(letter)
-        time.sleep(STEPS)
     pyautogui.typewrite(" ")
     SPANNUM=SPANNUM+1
 
