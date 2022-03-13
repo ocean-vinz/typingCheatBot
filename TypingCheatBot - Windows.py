@@ -15,6 +15,7 @@ SPANNUM=1
 
 #StartHere
 driver.get("https://10fastfingers.com/typing-test/english")
+driver.maximize_window()
 
 driver.implicitly_wait(3)
 
